@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const petDB = "petDB";
 
-mongoose.connect("mongodb://morganducks.github.io/adopt/" + petDB, {
+mongoose.connect("mongodb://localhost/" + petDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

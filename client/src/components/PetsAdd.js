@@ -23,7 +23,7 @@ const PetsAdd = (props) => {
     const submitHandler = (e) => {
 
         e.preventDefault();
-        axios.post("https://morganducks.github.io/adopt/api/pets", {
+        axios.post("https://localhost:8000/api/pets", {
             petName,
             petType,
             petGender,

@@ -12,7 +12,7 @@ const PetsListOne = (props) => {
 
 
     useEffect(() => {
-        axios.get("https://morganducks.github.io/adopt/api/pets/" + id)
+        axios.get("http://localhost:8000/api/pets/" + id)
             .then((res) => {
                 console.log(res);
                 // debugger
@@ -31,7 +31,7 @@ const PetsListOne = (props) => {
 
         setPetLike(petLike)
         // console.log(typeof petLike)
-        axios.put(`https://morganducks.github.io/adopt/api/pets/${id}`, {
+        axios.put(`http://localhost:8000/api/pets/${id}`, {
             petLike
         })
             .then((res) => {
@@ -50,11 +50,11 @@ const PetsListOne = (props) => {
 
 
     const deletePets = (idFromBelow) => {
-        axios.delete(`https://morganducks.github.io/adopt/api/pets/${idFromBelow}`)
+        axios.delete(`http://localhost:8000/api/pets/${idFromBelow}`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data);
-                navigate("/adopt")
+                navigate("/")
             })
             .catch((err) => console.log(err));
     }
@@ -63,7 +63,7 @@ const PetsListOne = (props) => {
     return (
         <div style={{ marginTop: "0px", marginBottom: "40px" }}>
             <div className="heroImage">
-                <h1 className="heroText"><Link to="/adopt">Paul&rsquo;s Pet Shelter</Link></h1>
+                <h1 className="heroText"><Link to="/">Paul&rsquo;s Pet Shelter</Link></h1>
                 <button className="mainButton"><Link to={"/pets/add"}>Put a pet up for adoption</Link></button>
             </div>
 
