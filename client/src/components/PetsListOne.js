@@ -12,7 +12,7 @@ const PetsListOne = (props) => {
 
 
     useEffect(() => {
-        axios.get("https://localhost:8000/api/pets/" + id)
+        axios.get("https://morganducks.github.io/adopt/api/pets/" + id)
             .then((res) => {
                 console.log(res);
                 // debugger
@@ -31,7 +31,7 @@ const PetsListOne = (props) => {
 
         setPetLike(petLike)
         // console.log(typeof petLike)
-        axios.put(`https://localhost:8000/api/pets/${id}`, {
+        axios.put(`https://morganducks.github.io/adopt/api/pets/${id}`, {
             petLike
         })
             .then((res) => {
@@ -50,7 +50,7 @@ const PetsListOne = (props) => {
 
 
     const deletePets = (idFromBelow) => {
-        axios.delete(`https://localhost:8000/api/pets/${idFromBelow}`)
+        axios.delete(`https://morganducks.github.io/adopt/api/pets/${idFromBelow}`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data);
