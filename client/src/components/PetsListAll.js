@@ -12,7 +12,7 @@ const PetsListAll = (props) => {
 
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/pets")
+        axios.get("https://localhost:8000/api/pets")
             .then((res) => {
                 console.log(res);
                 console.log(res.data);
@@ -22,7 +22,7 @@ const PetsListAll = (props) => {
     }, [])
 
     // const deletePets = (idFromBelow) => {
-    //     axios.delete(`http://localhost:8000/api/pets/${idFromBelow}`)
+    //     axios.delete(`https://localhost:8000/api/pets/${idFromBelow}`)
     //         .then((res) => {
     //             console.log(res);
     //             console.log(res.data);

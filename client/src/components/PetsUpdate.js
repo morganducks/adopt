@@ -20,7 +20,7 @@ const PetsUpdate = (props) => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/pets/${id}`)
+        axios.get(`https://localhost:8000/api/pets/${id}`)
             .then((res) => {
                 console.log(res);
                 console.log(res.data);
@@ -42,7 +42,7 @@ const PetsUpdate = (props) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/pets/${id}`, {
+        axios.put(`https://localhost:8000/api/pets/${id}`, {
             petName,
             petType,
             petGender,
