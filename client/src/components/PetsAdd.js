@@ -67,7 +67,7 @@ const PetsAdd = (props) => {
                 <button className="mainButton"><Link to={"/pets/add"}>Put a pet up for adoption</Link></button>
             </div>
             <div className="mainContainer">
-                <div className="editLink"><Link to={`/`}>Back Home</Link>
+                <div className="editLink"><Link to={"/adopt"}>Back Home</Link>
                 </div>
 
                 <form className="formContainer" onSubmit={submitHandler}>
