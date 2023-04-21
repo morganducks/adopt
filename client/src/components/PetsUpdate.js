@@ -72,7 +72,7 @@ const PetsUpdate = (props) => {
     return (
         <div style={{ marginTop: "0px", marginBottom: "40px" }}>
             <div className="heroImage">
-                <h1 className="heroText"><Link to="/">Paul&rsquo;s Pet Shelter</Link></h1>
+                <h1 className="heroText"><Link to="/adopt">Paul&rsquo;s Pet Shelter</Link></h1>
                 <button className="mainButton"><Link to={"/pets/add"}>Put a pet up for adoption</Link></button>
             </div>
 
@@ -175,7 +175,7 @@ const PetsUpdate = (props) => {
 
                     </div>
                     <button className="mainButton editButton" style={{ marginRight: "30px" }}>Update {petName}'s info</button>
-                    <button className="mainButton"><Link to="/">Cancel</Link></button>
+                    <button className="mainButton"><Link to="/adopt">Cancel</Link></button>
                 </form>
             </div>
         </div>

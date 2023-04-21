@@ -15,10 +15,10 @@ function App() {
     <div className="App">
     <BrowserRouter>
     <Routes>
-    <Route element={<PetsListAll allPets={allPets} setAllPets={setAllPets}/>} path="/" />
-    <Route element={<PetsUpdate />} path="/pets/edit/:id" />
-    <Route element={<PetsListOne />} path="/pets/:id" />
-    <Route element={<PetsAdd />} path="/pets/add" />
+    <Route element={<PetsListAll allPets={allPets} setAllPets={setAllPets}/>} exact path="/adopt" />
+    <Route element={<PetsUpdate />} exact path="/pets/edit/:id" />
+    <Route element={<PetsListOne />} exact path="/pets/:id" />
+    <Route element={<PetsAdd />} exact path="/pets/add" />
     </Routes>
     </BrowserRouter>
     </div>

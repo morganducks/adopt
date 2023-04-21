@@ -48,7 +48,7 @@ const PetsAdd = (props) => {
                 setSkillOne("")
                 setSkillTwo("")
                 setSkillThree("")
-                navigate("/");
+                navigate("/adopt");
             })
             .catch((err) => {
                 console.log(err)
@@ -63,7 +63,7 @@ const PetsAdd = (props) => {
     return (
         <div>
             <div className="heroImage">
-                <h1 className="heroText"><Link to="/">Paul&rsquo;s Pet Shelter</Link></h1>
+                <h1 className="heroText"><Link to="/adopt">Paul&rsquo;s Pet Shelter</Link></h1>
                 <button className="mainButton"><Link to={"/pets/add"}>Put a pet up for adoption</Link></button>
             </div>
             <div className="mainContainer">
@@ -159,7 +159,7 @@ const PetsAdd = (props) => {
                         </div>
                         <div className="addButtonRow">
                             <button className="mainButton" style={{ marginRight: "30px" }}>Add pet</button>
-                            <button className="mainButton"><Link to="/">Cancel</Link></button>
+                            <button className="mainButton"><Link to="/adopt">Cancel</Link></button>
                         </div>
                     </div>
                 </form>
